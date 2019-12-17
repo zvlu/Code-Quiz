@@ -1,1 +1,78 @@
+*,* ::before, * ::after{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+#timer{
+    padding: 8px;
+    margin-left: 1005px;
+}
+#Header2-container{
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+#quiz-title{
+    
+    font-size: larger;
+    font-weight: bolder;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+
+}
+#quiz-description{
+    color: rgb(175, 201, 30);
+    font-size: 1.40rem;
+    word-wrap: break-word;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+
+}
+#questions{
+    color: aqua;
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn{
+    
+    width: 100vw;
+    
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+
+}
+#game-container {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+.controls{
+    margin: auto;
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+
+}
