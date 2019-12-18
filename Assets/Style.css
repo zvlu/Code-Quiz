@@ -3,75 +3,116 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-#timer{
+/* Setting a variable for the color of body according to wrong and right answer*/
+:root { 
+    --hue-neutral: 2001;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+/* Setting a variable for the color of body according to wrong and right answer*/
+body {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 20%);
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+/* Setting a variable for the color of body according to right answer*/
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+
+}
+#highscore {
+    color: aqua;
+    font-size:normal;
+
+}
+#timer {
     padding: 8px;
     margin-left: 1005px;
 }
-#Header2-container{
+#Header2-container {
+
     padding: 0;
     display: flex;
     width: 100vw;
-    height: 15vh;
     justify-content: center;
     align-items: center;
+    position: inherit;
 }
-#quiz-title{
+#quiz-title {
     
     font-size: larger;
     font-weight: bolder;
     margin: 0;
     display: flex;
     width: 100vw;
-    height: 15vh;
+   
     justify-content: center;
     align-items: center;
 
 }
-#quiz-description{
+#quiz-description {
     color: rgb(175, 201, 30);
     font-size: 1.40rem;
     word-wrap: break-word;
     display: flex;
     width: 100vw;
-    height: auto;
-    font-weight: lighter;
-    justify-content: center;
-    align-items: center;
-
-}
-#questions{
-    color: aqua;
-    display: flex;
-    width: 100vw;
-    height: 20vh;
-    font-weight: lighter;
-    justify-content: center;
-    align-items: center;
-
-}
-.btn{
-    
-    width: 100vw;
     
     font-weight: lighter;
     justify-content: center;
     align-items: center;
 
 }
+
+
 #game-container {
-    padding: 0;
-    margin: auto;
+    margin-left: 380px;
     display: flex;
-    width: 100vw;
-    height: 40vh;
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
     justify-content: center;
     align-items: center;
 }
-.controls{
-    margin: auto;
+#questions {
+    
+    justify-content: center;
+    align-items: center;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+/* Button varibles starts blue */
+.btn {
+    --hue: var(-- hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+.controls,#start-btn,#next-btn {
+    color:blue;
+    margin: 5px;
+    padding: 10px;
     display: flex;
-    width: 100vw;
-    height: 40vh;
+    border-radius: 5px;
+ 
+    outline: none;
     justify-content: center;
     align-items: center;
 

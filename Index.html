@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="assets/Style.css">
     <title>Hartford Insurance Code Quiz</title>
 </head>
-<body>
+<body >
 <div id="header-container" class="post-hide">
     <header>
         <div>
             <h1>
-                <span><a href= "https://www.google.com">View Highscores </a></span>
+                <span id="highscore"><a href= "https://www.google.com">View Highscores </a></span>
                 <span id="timer">Time :</span>
                 <span id="timer-value">0</span>
             </h1>
@@ -32,7 +32,7 @@
 
 
 <div id="game-container" class="hide">
-    <div id="question-container" class="hide">
+    <div id="question-answers" class="hide">
         <div id="questions">Questions</div>
         <div id="answer-btns" class="btn-grid">
             <button class="btn"> Answer 1</button>
@@ -43,8 +43,8 @@
     </div>    
 </div>
     
-<div class="controls">
-    <div>
+<div>
+    <div class="controls">
         <button id="start-btn">Start Quiz</button>
         <button id="next-btn">Next</button>
     </div>
