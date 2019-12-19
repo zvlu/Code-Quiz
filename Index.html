@@ -6,16 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/Style.css">
+    
     <title>Hartford Insurance Code Quiz</title>
 </head>
 <body >
+    <ul class="nav">
+        <li class="nav-item">
+          <a id="highscore" class="nav-link active" href="#">View Highscore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.w3schools.com/">W3 Schools</a>
+        </li>
+      
+        
+        <span id="timer">Time :</span>
+        <span id="timer-value">0</span>
+      </ul>
 <div id="header-container" class="post-hide">
     <header>
         <div>
             <h1>
-                <span id="highscore"><a href= "https://www.google.com">View Highscores </a></span>
-                <span id="timer">Time :</span>
-                <span id="timer-value">0</span>
+               
+                
             </h1>
         </div>
     </header>
@@ -32,8 +44,8 @@
 
 
 <div id="game-container" class="hide">
-    <div id="question-answers" class="hide">
-        <div id="questions">Questions</div>
+    <div id="question-answers">
+        <div id="question">Questions</div>
         <div id="answer-btns" class="btn-grid">
             <button class="btn"> Answer 1</button>
             <button class="btn"> Answer 2</button> 
@@ -42,16 +54,18 @@
         </div>
     </div>    
 </div>
-    
+
 <div>
     <div class="controls">
+        
         <button id="start-btn">Start Quiz</button>
-        <button id="next-btn">Next</button>
+        <button id="next-btn" class="hide">Next</button>
     </div>
-</div>    
-
-
-<script defer src="assests/questions.js"></script>    
-<script defer src="assest/Script.js"></script>       
+</div>
+  
+<script defer src="assets/Script.js"></script> 
+<script defer src="assets/questions.js"></script>    
+    
+      
 </body>
 </html>

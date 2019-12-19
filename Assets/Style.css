@@ -28,16 +28,26 @@ body.wrong {
     --hue: var(--hue-wrong);
 
 }
-#highscore {
+.nav {
+    background-color: white;
+}
+a {
     color: aqua;
     font-size:normal;
 
 }
 #timer {
+    color: aqua;
     padding: 8px;
     margin-left: 1005px;
 }
+#timer-value {
+    padding-top: 9px;
+
+    color: red;
+}
 #Header2-container {
+    color: aqua;
 
     padding: 0;
     display: flex;
@@ -74,7 +84,7 @@ body.wrong {
 
 #game-container {
     margin-left: 380px;
-    display: flex;
+    
     width: 800px;
     max-width: 80%;
     background-color: white;
@@ -84,7 +94,7 @@ body.wrong {
     justify-content: center;
     align-items: center;
 }
-#questions {
+#question {
     
     justify-content: center;
     align-items: center;
@@ -101,19 +111,41 @@ body.wrong {
     border: 1px solid hsl(var(--hue), 100%, 30%);
     background-color: hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
-    padding: 5px 10px;
+    
     color: white;
     outline: none;
 }
-.controls,#start-btn,#next-btn {
-    color:blue;
-    margin: 5px;
-    padding: 10px;
+.btn:hover {
+    border-color: black;
+}
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+
+}
+.btn.wrong {
+
+    --hue: var(--hue-wrong);
+}
+.controls {
     display: flex;
-    border-radius: 5px;
- 
-    outline: none;
     justify-content: center;
     align-items: center;
-
+}
+.controls,#start-btn,#next-btn {
+    color:aqua;
+    padding-bottom:10px;
+    padding-top: 10px;
+    
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+    
+}
+.hide {
+    display: none;
+   
+}
+.controls,#start-btn:hover,#next-btn:hover{
+    border-color: black;
 }
