@@ -1,31 +1,31 @@
 //Question Variables
 
 
-var questions = [
+ questions = [
     {
         question: "Commonly used data types DO NOT include:",
-        choices: ["strings", "booleans", "alerts", "numbers"],
-        answer: "alerts"
+        answers: [ "strings", "booleans", "alerts", "numbers"],
+        correct: "alerts"
     },
     {
         question: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        answers: ["quotes", "curly brackets", "parentheses", "square brackets"],
+        correct: "parentheses"
     },
     {
-        question: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        question: "Which one would make this isNaN function true?",
+        answers: ["8", "curly brackets", "string", "boolean"],
+        correct: "8"
       },
     {
-        question: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        question: "What character can break JavaScript Code into several lines?",
+        answers: ["backslash", "curly brackets", "parentheses", "foward slash"],
+        correct: "backlash"
     },
     {
-        question: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        question: "What company developed JavaScript?",
+        answers: ["Netscape", "Tesla", "Java", "Google"],
+        correct: "Netscape"
     },
 
   ];

@@ -142,6 +142,9 @@ a {
     outline: none;
     
 }
+.post-hide {
+    display: none;
+}
 .hide {
     display: none;
    
